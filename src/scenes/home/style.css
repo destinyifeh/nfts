@@ -1,0 +1,45 @@
+
+
+.banner{
+    min-height:30vh;
+    background-color: ghostwhite;
+    width:75vw;
+    margin: auto;
+    padding:10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container{
+    display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+    
+
+}
+
+.nftImage img{
+    width:500px;
+    height:140px;
+    
+}
+@media screen and (max-width:992px){
+    .nftImage img{
+        width:200px;
+        height:145PX;
+
+    }
+}
+
+@media screen and (max-width:576px){
+    .banner{
+        display: block;
+
+    }
+    .nftImage{
+      
+        text-align: center;
+    }
+}
