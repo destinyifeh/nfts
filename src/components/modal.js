@@ -1,39 +1,39 @@
 export default function Modal({ detail }) {
   return (
     <div
-      class="modal fade"
+      className="modal fade"
       id="exampleModalLong"
-      tabindex="-1"
+      tabIndex="-1"
       role="dialog"
       aria-labelledby="exampleModalLongTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
+      <div className="modal-dialog modal-dialog-centered" role="document">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title" id="exampleModalLongTitle">
               NFT Detail
             </h5>
             <button
               type="button"
-              class="close"
+              className="close"
               data-bs-dismiss="modal"
               aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div className="modal-body">
             <p>Name: {detail?.name}</p>
             <p>Symbol: {detail?.symbol}</p>
             <p>Type: {detail?.type}</p>
 
             <p>Description: {detail.metadata?.description}</p>
           </div>
-          <div class="modal-footer">
+          <div className="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               data-bs-dismiss="modal"
             >
               Close
@@ -43,7 +43,7 @@ export default function Modal({ detail }) {
               target="_blank"
               rel="noreferrer"
             >
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Buy
               </button>
             </a>

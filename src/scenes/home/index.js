@@ -12,6 +12,7 @@ export default function HomePage() {
       try {
         let res = await itemService.getItems();
         const { nfts, contract } = res.data;
+        console.log(res, "ress");
         setItems(nfts);
         setDetail(contract);
       } catch (err) {
